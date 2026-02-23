@@ -78,7 +78,7 @@ Rezervácie so statusom `UNKNOWN` alebo chýbajúcim statusom:
 
 - **HARD conflict**: prekrýva sa a status je `CONFIRMED` alebo `PICKED_UP`
 - **SOFT conflict**: prekrýva sa a status je `UNKNOWN` alebo chýba
-- **DATA conflict**: rezervácia má nevalidné dátumy (`to <= from`) alebo chýba `from/to` (rátaj ako konflikt, ale neblokuj auto)
+- **DATA conflict**: rezervácia má nevalidné dátumy (`to <= from`) alebo chýba `from/to` (rátaj ako konflikt, ale neblokuj auto, bez ohľadu či sa dátumovo prekrýva)
 
 > Inými slovami: `conflicts` = koľko varovaní/problémov vieš nájsť okolo dostupnosti auta v danom intervale.
 
